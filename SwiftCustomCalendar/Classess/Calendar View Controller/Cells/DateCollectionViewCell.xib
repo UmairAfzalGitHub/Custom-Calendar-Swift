@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DateCollectionViewCell" customModule="PamperMoi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07s-lr-ddD">
+                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kEy-MC-LLk">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ6-f1-HGC">
+                                <rect key="frame" x="17" y="13.5" width="21.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.5568627451" green="0.35686274509999999" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sm-H8-DE6">
+                                <rect key="frame" x="24" y="39" width="6" height="6"/>
+                                <color key="backgroundColor" red="1" green="0.37621734829999998" blue="0.45840567450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="Nqx-eX-YSe"/>
+                                    <constraint firstAttribute="width" constant="6" id="dTl-bP-9Gn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FZ6-f1-HGC" firstAttribute="centerX" secondItem="07s-lr-ddD" secondAttribute="centerX" id="2BX-be-yvX"/>
+                            <constraint firstItem="FZ6-f1-HGC" firstAttribute="centerY" secondItem="07s-lr-ddD" secondAttribute="centerY" constant="-3" id="5f9-2A-5fH"/>
+                            <constraint firstItem="kEy-MC-LLk" firstAttribute="leading" secondItem="07s-lr-ddD" secondAttribute="leading" id="D34-S9-DeO"/>
+                            <constraint firstAttribute="bottom" secondItem="kEy-MC-LLk" secondAttribute="bottom" id="Egv-Fe-KxR"/>
+                            <constraint firstAttribute="bottom" secondItem="5Sm-H8-DE6" secondAttribute="bottom" constant="10" id="Onn-os-BHd"/>
+                            <constraint firstItem="5Sm-H8-DE6" firstAttribute="centerX" secondItem="07s-lr-ddD" secondAttribute="centerX" id="SdY-xe-hUE"/>
+                            <constraint firstAttribute="trailing" secondItem="kEy-MC-LLk" secondAttribute="trailing" id="ZXE-qE-y59"/>
+                            <constraint firstItem="kEy-MC-LLk" firstAttribute="top" secondItem="07s-lr-ddD" secondAttribute="top" id="cKa-ck-VJo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.92812067269999998" green="0.92882484200000004" blue="0.92822974920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="07s-lr-ddD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FZQ-8q-VdA"/>
+                <constraint firstItem="07s-lr-ddD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N6v-zW-iBV"/>
+                <constraint firstAttribute="trailing" secondItem="07s-lr-ddD" secondAttribute="trailing" id="u5Y-jQ-NWi"/>
+                <constraint firstAttribute="bottom" secondItem="07s-lr-ddD" secondAttribute="bottom" id="yJD-Y9-Fui"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="75" height="69"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="kEy-MC-LLk" id="cOZ-Yc-amA"/>
+                <outlet property="dateCircularView" destination="07s-lr-ddD" id="rNa-YY-XuJ"/>
+                <outlet property="dateLabel" destination="FZ6-f1-HGC" id="48r-qX-YPT"/>
+                <outlet property="eventView" destination="5Sm-H8-DE6" id="Ivx-zW-lNI"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="60.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
