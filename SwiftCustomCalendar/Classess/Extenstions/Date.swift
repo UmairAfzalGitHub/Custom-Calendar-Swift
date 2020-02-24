@@ -24,5 +24,4 @@ extension Date {
     func isWeekend() -> Bool {
         return Date.calendar.isDateInWeekend(self)
     }
-
 }
